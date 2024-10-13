@@ -1,0 +1,141 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #2c3e50;
+    background-color: #ecf0f1;
+    padding: 20px;
+}
+
+/* Header with Navigation */
+header {
+    background-color: #1abc9c;
+    padding: 15px 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 2rem;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #16a085;
+    border-radius: 5px;
+}
+
+/* Image Section */
+.couple-image {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.couple-image img {
+    width: 60%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Wedding Info Section */
+.wedding-info {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.wedding-info h2 {
+    font-size: 2rem;
+    color: #34495e;
+    margin-bottom: 20px;
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.image-gallery img {
+    width: 220px;
+    height: 130px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.spreadsheet {
+    width: 60%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #1abc9c;
+    color: #ffffff;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+footer .scroll-link {
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer .scroll-link:hover {
+    color: #ecf0f1;
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 768px) {
+    .couple-image img, .spreadsheet {
+        width: 90%;
+    }
+
+    .image-gallery {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .image-gallery img {
+        width: 80%;
+    }
+}
